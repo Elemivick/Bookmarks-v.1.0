@@ -1,0 +1,29 @@
+// COLORS 
+$color-white: #F5F5F6;
+
+// FONTS 
+
+@font-face {
+    font-family: 'FrutigerNextLT-RegularCn';
+    src: url('/fonts/FrutigerNextLT-RegularCn.eot?') format('eot'),
+        url('/fonts/FrutigerNextLT-RegularCn.woff') format('woff'),
+        url('/fonts/FrutigerNextLT-RegularCn.ttf') format('truetype'),
+        url('/fonts/FrutigerNextLT-RegularCn.svg#FrutigerNextLT-RegularCn') format('svg');
+}
+
+@font-face {
+    font-family: 'FrutigerNextLT-LightCn';
+    src: url('/fonts/FrutigerNextLT-LightCn.eot?') format('eot'),
+        url('/fonts/FrutigerNextLT-LightCn.woff') format('woff'),
+        url('/fonts/FrutigerNextLT-LightCn.ttf') format('truetype'),
+        url('/fonts/FrutigerNextLT-LightCn.svg#FrutigerNextLT-LightCn') format('svg');
+
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
