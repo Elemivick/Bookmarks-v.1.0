@@ -1,23 +1,328 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-         
-    <title>Bookmarks VM</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+
+    <title>Victoria Bookmarks</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="item item--1">Item 1</div>
-        <div class="item item--2">Item 2</div>
-        <div class="item item--3">Item 3</div>
-        <div class="item item--4">Item 4</div>
-        <div class="item item--5">Item 5</div>
-        <div class="item item--6">Item 6</div>
+    <div class="container-fluid">
+
+        <div class="row">
+            <nav class="navbar-dark sticky-top col-md-3 col-lg-2 flex-md-nowrap p-0 ">
+                <a class="navbar-brand mr-0" href="#">
+                    <img src="img/logo.png" width="30" height="40" alt="Victoria Morales" loading="lazy"></a>
+                <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+
+        <div class="row">
+
+            <!-- SECTIONS SIDEBAR NAV -->
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+                <div class="sidebar-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#tools">
+                                <ion-icon name="build-outline"></ion-icon><span>Tools</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#html">
+                                <ion-icon name="logo-html5"></ion-icon><span>Html</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#css">
+                                <ion-icon name="logo-css3"></ion-icon><span>CSS</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#js">
+                                <ion-icon name="logo-javascript"></ion-icon><span>Js</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#jquery">
+                                <ion-icon name="moon-outline"></ion-icon><span>jQuery</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#fonts">
+                                <ion-icon name="text-outline"></ion-icon><span>Fonts</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#colors">
+                                <ion-icon name="color-filter-outline"></ion-icon><span>Colors</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#images">
+                                <ion-icon name="image-outline"></ion-icon><span>Images</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=#icons>
+                                <ion-icon name="disc-outline"></ion-icon><span>Icons</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#design">
+                                <ion-icon name="bulb-outline"></ion-icon><span>Design</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#speed">
+                                <ion-icon name="speedometer-outline"></ion-icon><span>Speed</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blogs">
+                                <ion-icon name="reader-outline"></ion-icon><span>Blogs</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#news">
+                                <ion-icon name="information-circle-outline"></ion-icon><span>News</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4 content-sticky scrolling-box">
+                <!-- SECTION TOOLS -->
+                <section class="group group__tools" id="tools">
+                    <header class="d-flex justify-content-center mb-5 pt-3">
+                        <h2 class="group__heading">
+                            <ion-icon name="build-outline"></ion-icon>Development Tools
+                        </h2>
+                    </header>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4 pr-5 pl-5">
+                            <article>
+                                <img class="bookmark__logo" src="img/logos/lorem_Ipsum.png" alt="Lorem Ipsum">
+                                <h3 class="bookmark__heading"><a href="https://loremipsum.io/" target="_blank">Lorem Ipsum</a></h3>
+                                <p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups.</p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4 pr-5 pl-5">
+                            <article>
+                                <img class="bookmark__logo" src="img/logos/favicon_generator.png" alt="Favicon Generator">
+                                <h3 class="bookmark__heading"><a href="https://realfavicongenerator.net/" target="_blank">Favicon Generator</a></h3>
+                                <p>The ultimate favicon generator. Design your icons platform per platform and make them look great everywhere. Including in Google results pages.</p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4 pr-5 pl-5">
+                            <article>
+                                <img class="bookmark__logo" src="img/logos/iframely.png" alt="iFramely">
+                                <h3 class="bookmark__heading"><a href="https://iframely.com/" target="_blank">iFramely</a></h3>
+                                <p>The ultimate favicon generator. Design your icons platform per platform and make them look great everywhere. Including in Google results pages.</p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4 pr-5 pl-5">
+                            <article>
+                                <img class="bookmark__logo" src="img/logos/codepen.png" alt="Codepen">
+                                <h3 class="bookmark__heading"><a href="https://codepen.io/" target="_blank">Codepen</a></h3>
+                                <p>An online code editor, learning environment, and community for front-end web development using HTML, CSS and JavaScript code snippets, projects, and web applications.</p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4 pr-5 pl-5">
+                            <article>
+                                <img class="bookmark__logo" src="img/logos/mockup_kit.png" alt="Sneakpeekit">
+                                <h3 class="bookmark__heading"><a href="https://sneakpeekit.com/" target="_blank">Sneakpeekit</a></h3>
+                                <p>Sneakpeekit is a free collection of printable PDF grids for design wireframing including 7 different templates</p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4 pr-5 pl-5">
+                            <article>
+                                <img class="bookmark__logo" src="img/logos/emmet.png" alt="Emmet Cheat Sheet">
+                                <h3 class="bookmark__heading"><a href="https://docs.emmet.io/cheat-sheet/" target="_blank">Emmet Cheat Sheet</a></h3>
+                                <p>Emmet is a web-developer’s toolkit for boosting HTML & CSS code writing.
+                                    With Emmet, you can type expressions (abbreviations) similar to CSS selectors and convert them into code fragment with a single keystroke</p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <!-- SECTION HTML -->
+                <section class="group group__html" id="html">
+                    <header class="d-flex justify-content-center mb-5 pt-3">
+                        <h2 class="group__heading">
+                            <ion-icon name="logo-html5"></ion-icon>Html Resources
+                        </h2>
+                    </header>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4 pr-5 pl-5">
+                            <article>
+                                <img class="bookmark__logo" src="img/logos/cheat_sheet.png" alt="Html Cheat Sheet">
+                                <h3 class="bookmark__heading"><a href="https://websitesetup.org/html5-cheat-sheet/" target="_blank">Html Cheat</a></h3>
+                                <p>The ultimate HTML reference sheet for beginners. Contains all necessary HTML tags and attributes. </p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4 pr-5 pl-5">
+                            <article>
+                                <img class="bookmark__logo" src="img/logos/developer_mozilla.png" alt="HTML5 Reference by MDN">
+                                <h3 class="bookmark__heading"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">HTML5 Reference by MDN</a></h3>
+                                <p>This page lists all the HTML elements, which are created using tags. They are grouped by function to help you find what you have in mind easily. An alphabetical list of all elements is provided in the sidebar on every element's page as well as this one.</p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4 pr-5 pl-5">
+                            <article>
+                                <img class="bookmark__logo" src="img/logos/w3c.png" alt="Html Glyphs">
+                                <h3 class="bookmark__heading"><a href="https://www.toptal.com/designers/htmlarrows/symbols/#" target="_blank">Html Glyphs</a></h3>
+                                <p>Easily find HTML symbols, entities, characters and codes with ASCII, HEX, CSS and Unicode values; including copyright sign, trademark sign and at symbol.</p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <!-- SECTION CSS -->
+                <section class="group group__css" id="css">
+                    <header class="d-flex justify-content-center mb-5 pt-3">
+                        <h2 class="group__heading">
+                            <ion-icon name="logo-css3"></ion-icon>CSS Resources
+                        </h2>
+                    </header>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4 pr-5 pl-5">
+                            <article>
+                                <img class="bookmark__logo" src="img/logos/cheat_sheet.png" alt="CSS Cheat Sheet">
+                                <h3 class="bookmark__heading"><a href="https://websitesetup.org/css3-cheat-sheet/" target="_blank">CSS Cheat Sheet</a></h3>
+                                <p>CSS Cheat Sheet contains the most common style snippets: CSS gradient, background, button, font-family, border, radius, box and text shadow generators, color ...</p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4 pr-5 pl-5">
+                            <article>
+                                <img class="bookmark__logo" src="img/logos/developer_mozilla.png" alt="CSS3 Reference by MDN">
+                                <h3 class="bookmark__heading"><a href="https://realfavicongenerator.net/" target="_blank">CSS3 Reference by MDN</a></h3>
+                                <p>Use this CSS reference to browse an alphabetical index of all of the standard CSS properties, pseudo-classes, pseudo-elements, data types, and at-rules. You can also browse key CSS concepts and a list of selectors organized by type. </p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4 pr-5 pl-5">
+                            <article>
+                                <img class="bookmark__logo" src="img/logos/codrops.png" alt="CSS3 Reference by Codrops">
+                                <h3 class="bookmark__heading"><a href="http://tympanus.net/codrops/css_reference/#section_css-property" target="_blank">CSS3 Reference by Codrops</a></h3>
+                                <p>Another excellent CSS3 reference, this time from Codrops.</p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4 pr-5 pl-5">
+                            <article>
+                                <img class="bookmark__logo" src="img/logos/envato.png" alt="30 CSS Selectors by Envato Tutplus">
+                                <h3 class="bookmark__heading"><a href="https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048" target="_blank">30 CSS Selectors by Envato Tutplus</a></h3>
+                                <p>the 30 most important CSS selectors from Tutplus all the time.</p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4 pr-5 pl-5">
+                            <article>
+                                <img class="bookmark__logo" src="img/logos/clippy.png" alt="CSS clip-paths">
+                                <h3 class="bookmark__heading"><a href="https://bennettfeely.com/clippy/" target="_blank">CSS clip-paths</a></h3>
+                                <p>Bennett Feely's Clippy tool is a valuable tool to help make CSS clip-paths</p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4 pr-5 pl-5">
+                            <article>
+                                <img class="bookmark__logo" src="img/logos/bennettfeely.png" alt="Image Effects with CSS">
+                                <h3 class="bookmark__heading"><a href="https://bennettfeely.com/image-effects/" target="_blank">Image Effects with CSS</a></h3>
+                                <p>A collection of CSS snippets to create fast, complex images.</p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4 pr-5 pl-5">
+                            <article>
+                                <img class="bookmark__logo" src="img/logos/pixeltuner.png" alt="Geometrische Formen mit CSS3">
+                                <h3 class="bookmark__heading"><a href="https://pixeltuner.de/css3-formen/" target="_blank">Geometrische Formen mit CSS3</a></h3>
+                                <p>Eine Sammlung von 50 Beispiele für geometrische Formen, die mit reinem CSS3 erstellt werden.</p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4 pr-5 pl-5">
+                            <article>
+                                <img class="bookmark__logo" src="img/logos/easing_funktion.png" alt="CSS Easing Functions">
+                                <h3 class="bookmark__heading"><a href="https://easings.net/" target="_blank">CSS Easing Functions</a></h3>
+                                <p>An amazing collection of easing functions bo be used in CSS transitions and animations.</p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <!-- SECTION JS - JQUERY -->
+                <section class="group group__js" id="js">
+
+                    <header class="d-flex justify-content-center mb-5 pt-3">
+                        <h2 class="group__heading">
+                            <ion-icon name="logo-javascript"></ion-icon>JavaScript Resources
+                        </h2>
+                    </header>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4 pr-5 pl-5">
+                            <article>
+                                <img class="bookmark__logo" src="img/logos/developer_mozilla.png" alt="JavaScript Reference by MDN">
+                                <h3 class="bookmark__heading"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/" target="_blank">JavaScript Reference by MDN</a></h3>
+                                <p>Another reference by MDN, this one is for JavaScript. This is pretty advanced stuff.</p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4 pr-5 pl-5">
+                            <article>
+                                <img class="bookmark__logo" src="img/logos/developer_mozilla.png" alt="JavaScript Operator Precedence Table">
+                                <h3 class="bookmark__heading"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence" target="_blank">JavaScript Operator Precedence Table</a></h3>
+                                <p>Very handy cheatsheet to determine which JavaScript operators are evaluated first.</p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4 pr-5 pl-5">
+                            <article>
+                                <img class="bookmark__logo" src="img/logos/developer_mozilla.png" alt="JavaScript Event Reference">
+                                <h3 class="bookmark__heading"><a href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank">JavaScript Event Reference</a></h3>
+                                <p>Handy reference list of all DOM events with explanations, nicely categorized.</p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4 pr-5 pl-5">
+                            <article>
+                                <img class="bookmark__logo" src="img/logos/js.png" alt="Velocity.js">
+                                <h3 class="bookmark__heading"><a href="http://velocityjs.org/" target="_blank">Velocity.js</a></h3>
+                                <p>Velocity is an animation engine with the same API as jQuery's $.animate(). It works with and without jQuery. It's incredibly fast, and it features color animation, transforms, loops, easings, SVG support, and scrolling. It is the best of jQuery and CSS transitions combined.</p>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 mb-4 pr-5 pl-5">
+                            <article>
+                                <img class="bookmark__logo" src="img/logos/w3schools.png" alt="JavaScript Comparison and Logical Operators">
+                                <h3 class="bookmark__heading"><a href="http://velocityjs.org/" target="_blank">JavaScript Comparison and Logical Operators</a></h3>
+                                <p>Comparison operators are used in logical statements to determine equality or difference between variables or values.</p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <!-- SECTION  -->
+
+            </main>
+
+        </div>
+
     </div>
+    <div class="scroll-to-top">
+        <a title="Scroll to top" href="#">top</a>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
 </body>
+
 </html>

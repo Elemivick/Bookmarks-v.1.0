@@ -1,2 +1,293 @@
-@import "base/base";
-@import "layout/grid"
+$color-black: #000000;
+$color-grey: #F5F5F6;
+$color-dark-grey: #777;
+$color-dark-blue: #2d4059;
+$color-orange: #f07b3f;
+
+$font-family-regular: "FrutigerNextLT-RegularCn",
+sans-serif;
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// MEDIA QUERY MANAGER
+/*
+0 - 576px:      sm
+576 - 768px:    md
+768 - 992px:   lg
+1200px + :      xl
+*/
+
+@font-face {
+  font-family: 'FrutigerNextLT-RegularCn';
+  src: url("../fonts/FrutigerNextLT-RegularCn.eot?") format("eot"), url("../fonts/FrutigerNextLT-RegularCn.woff") format("woff"), url("../fonts/FrutigerNextLT-RegularCn.ttf") format("truetype"), url("../fonts/FrutigerNextLT-RegularCn.svg#FrutigerNextLT-RegularCn") format("svg");
+}
+
+@font-face {
+  font-family: 'FrutigerNextLT-LightCn';
+  src: url("../fonts/FrutigerNextLT-LightCn.eot?") format("eot"), url("../fonts/FrutigerNextLT-LightCn.woff") format("woff"), url("../fonts/FrutigerNextLT-LightCn.ttf") format("truetype"), url("../fonts/FrutigerNextLT-LightCn.svg#FrutigerNextLT-LightCn") format("svg");
+}
+
+body {
+  background-color: $color-grey;
+  font-family: $font-family-regular;
+  font-weight: 500;
+  line-height: 1.7;
+  color: $color-dark-grey;
+
+  & .scroll-to-top {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    & .show {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  /* #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  } */
+
+
+
+}
+
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+/*
+* Navbar
+*/
+nav {
+  &.navbar-dark {
+    -webkit-box-shadow: 0px 6px 9px -4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 6px 9px -4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 6px 9px -4px rgba(0, 0, 0, 0.5);
+    background-color: $color-dark-blue;
+    text-align: center;
+
+    & .navbar-brand {
+      padding-top: .75rem;
+      padding-bottom: .75rem;
+      font-size: 1rem;
+      color: $color-black;
+    }
+
+    & .navbar-toggler {
+      top: .65rem;
+      right: 1rem;
+      border-color: transparent;
+      color: transparent;
+
+      &:focus {
+        outline: transparent;
+      }
+    }
+  }
+}
+
+
+/*
+ * Sidebar
+ */
+nav {
+  &.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 60px 0 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    background-color: $color-dark-blue;
+
+    & .sidebar-sticky {
+      position: relative;
+      top: 0;
+      height: calc(100vh - 48px);
+      padding-top: .5rem;
+      overflow-x: hidden;
+      overflow-y: auto;
+      /* Scrollable contents if viewport is shorter than content. */
+    }
+
+    & .nav-item:last-child {
+      padding-block-end: 0.8rem;
+    }
+
+    a {
+      color: white;
+      font-size: 1.4rem;
+
+      &.nav-link {
+        &:active {
+          background-color: $color-orange;
+        }
+
+        &:hover {
+          color: white;
+          background-color: $color-orange;
+        }
+
+        ion-icon {
+          font-size: 1.7rem;
+          display: inline-block;
+          vertical-align: -5px;
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/*
+* Content
+*/
+main {
+  &.scrolling-box {
+    scroll-behavior: smooth;
+  }
+
+  &.content-sticky {
+    position: relative;
+    top: -4.5rem;
+    height: calc(100vh - 1px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Scrollable contents if viewport is shorter than content. */
+
+    header {
+      & .group__heading {
+        font-size: 2rem;
+        color: $color-dark-blue;
+
+        ion-icon {
+          font-size: 1.8rem;
+          display: inline-block;
+          vertical-align: -3px;
+          padding-right: 0.5rem;
+        }
+      }
+    }
+
+    article {
+      & .bookmark__logo {
+        height: 3rem;
+        margin-bottom: 1rem;
+        margin-right: 0.5rem;
+
+      }
+
+      & .bookmark__heading {
+        display: inline-block;
+
+        a {
+          color: $color-dark-blue;
+        }
+
+
+      }
+    }
+
+
+  }
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+/* Media Query */
+@include media-breakpoint-down(sm) {
+  nav {
+    .navbar-dark {
+      text-align: left;
+
+      & .navbar-brand {
+        padding-left: 2.28rem;
+      }
+    }
+  }
+
+
+  nav {
+    &.sidebar {
+      a {
+        color: white;
+        font-size: 1.2rem;
+
+        ion-icon {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+
+  main {
+    &.content-sticky {
+      position: relative;
+      top: 0;
+      height: calc(100vh - 48px);
+      padding-top: .5rem;
+      overflow-x: hidden;
+      overflow-y: auto;
+
+      /* Scrollable contents if viewport is shorter than content. */
+      header {
+        & .group__heading {
+          font-size: 1.5rem;
+
+          ion-icon {
+            font-size: 1.5rem;
+          }
+        }
+      }
+
+      article {
+        & .bookmark__logo {
+          height: 2rem;
+        }
+      }
+    }
+
+  }
+
+}
